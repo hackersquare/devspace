@@ -30,7 +30,8 @@
     "showdown": "^1.5.0",
     "socket.io": "^1.5.1",
     "socket.io-client": "^1.5.1",
-    "stripe": "^4.12.0"
+    "stripe": "^4.12.0",
+    "typings": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -39,7 +40,8 @@
     "build": "ng build --prod --output-path=dist/client && npm run _server:build",
     "_server:run": "tsc -p ./server && concurrently \"tsc -w -p ./server\" \"nodemon dist/server/bin/www.js\" ",
     "_server:build": "tsc -p ./server",
-    "postinstall": "npm run build"
+    "typings": "typings",
+    "postinstall": "typings install && npm run build"
   },
   "repository": {
     "type": "git",
