@@ -78,7 +78,8 @@
   "devDependencies": {
   },
   "scripts": {
-    "start": "nodemon ./server/server.js | ng serve --proxy-config proxy.conf.json",
+    "start": "nodemon dist/server/bundle.js",
+    "start2": "nodemon ./server/server.js | ng serve --proxy-config proxy.conf.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ng build --prod --output-path=dist/client && npm run _server:build",
     "_server:run": "tsc -p ./src && concurrently \"tsc -w -p ./src\" \"nodemon dist/server/bin/www.js\" ",
