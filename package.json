@@ -84,7 +84,7 @@
     "_server:run": "tsc -p ./server && concurrently \"tsc -w -p ./server\" \"nodemon dist/server/bin/www.js\" ",
     "_server:build": "tsc -p ./server",
     "typings": "typings",
-    "postinstall": "typings install --global require && npm run build"
+    "postinstall": "typings install --global && npm run build"
   },
   "repository": {
     "type": "git",
