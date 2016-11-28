@@ -127,7 +127,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-app.use('/', express.static(path.join(__dirname + 'dist/client')))
+app.get('/', express.static(path.join(__dirname + 'dist/client')))
 
 app.get('/api/auth/github', 
   passport.authenticate('github', { scope: 'email'}), (req, res) => { })
