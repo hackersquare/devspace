@@ -4,7 +4,6 @@
   "description": "Connect and share with other developers",
   "main": "server/server.js",
   "dependencies": {
-    "angular-cli": "1.0.0-beta.19-3",
     "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
     "concurrently": "^3.1.0",
@@ -32,7 +31,8 @@
     "socket.io-client": "^1.5.1",
     "stripe": "^4.12.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+  },
   "scripts": {
     "start": "concurrently --kill-others \"ng serve --proxy-config proxy.conf.json\" \"npm run _server:run\"",
     "test": "echo \"Error: no test specified\" && exit 1",

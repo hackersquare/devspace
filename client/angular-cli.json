@@ -3,6 +3,7 @@
     "version": "1.0.0-beta.19-3",
     "name": "client"
   },
+  "scripts": [],
   "apps": [
     {
       "root": "src",
