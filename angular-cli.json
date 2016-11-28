@@ -20,11 +20,8 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "./ngSemantic/assets/css/semantic.min.css"
       ],
-      "scripts": [
-        "./ngSemantic/vendor/semantic.min.js"
-      ],
+      "scripts": [],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
