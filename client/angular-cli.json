@@ -20,10 +20,10 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "../ngSemantic/assets/css/semantic.min.css"
+        "./ngSemantic/assets/css/semantic.min.css"
       ],
       "scripts": [
-        "../ngSemantic/vendor/semantic.min.js"
+        "./ngSemantic/vendor/semantic.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
