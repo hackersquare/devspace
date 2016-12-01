@@ -48,7 +48,7 @@ passport.deserializeUser((obj, done) => {
 passport.use(new Strategy({
   clientID: process.env.GITHUB_ID,
   clientSecret: process.env.GITHUB_SECRET,
-  callbackURL: 'http://localhost:4200/api/auth/github/callback'
+  callbackURL: 'https://www.devspace-app.herokuapp.com/api/auth/github/callback'
 }, (accessToken, refreshToken, profile, done) => {
   profile = JSON.parse(profile['_raw'])
   if (profile.name) {
@@ -125,6 +125,8 @@ app.use(session({
 
 app.use(passport.initialize())
 app.use(passport.session())
+
+//app.use('/', express.static(path.join(__dirname, 'dist/client')))
 
 app.get('/api/auth/github', 
   passport.authenticate('github', { scope: 'email'}), (req, res) => { })
