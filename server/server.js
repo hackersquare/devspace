@@ -126,7 +126,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-//app.use('/', express.static(path.join(__dirname, 'dist/client')))
+app.use('/', express.static(path.join(__dirname, '../dist')))
 
 app.get('/api/auth/github', 
   passport.authenticate('github', { scope: 'email'}), (req, res) => { })
@@ -155,6 +155,10 @@ app.use('/test', (req, res) => {
 })
 
 app.use('/api', rootRouter)
+
+app.get('*', (request, response) => {
+  response.sendFile((path.resolve(__dirname, '../dist', 'index.html')))
+})
 
 http.listen(PORT, () => {
   console.log('Listening on port ', PORT)
