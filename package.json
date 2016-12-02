@@ -55,7 +55,7 @@
     "socket.io-client": "^1.5.1",
     "ts-helpers": "^1.1.1",
     "typings": "^2.0.0",
-    "zone.js": "^0.6.23",
+    "zone.js": "^0.6.23"
   },
   "devDependencies": {
     "@types/jasmine": "^2.2.30",
