@@ -81,10 +81,10 @@
     "local": "nodemon ./server/server.js | ng serve --proxy-config proxy.conf.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ng build --prod --output-path=dist/client && npm run _server:build",
-    "_server:run": "tsc -p ./src && concurrently \"tsc -w -p ./src\" \"nodemon dist/server/bin/www.js\" ",
+    "_server:run": "nodemon ./server/server.js",
     "_server:build": "tsc -p ./src",
     "typings": "typings",
-    "postinstall": "typings install && npm run build"
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
