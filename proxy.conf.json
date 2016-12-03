@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://devspace-app.herokuapp.com",
+    "target": "https://devspace-app.herokuapp.com:8000",
     "secure": false
   }
 }

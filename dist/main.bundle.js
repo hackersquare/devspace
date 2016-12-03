@@ -10099,7 +10099,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var NewsfeedListService = (function () {
     function NewsfeedListService(_http) {
         this._http = _http;
-        this.socket = __WEBPACK_IMPORTED_MODULE_4_socket_io_client__("http://localhost:8000");
+        this.socket = __WEBPACK_IMPORTED_MODULE_4_socket_io_client__("https://www.devspace-app.herokuapp.com:8000");
         this.newsfeedPosts = [];
         this.secondaryList = [];
         this.insertionSort = function (unsortedList) {
@@ -81347,8 +81347,12 @@ var TeamsComponent = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `angular-cli.json`.
 var environment = {
-    production: true
+    production: false
 };
 
 
